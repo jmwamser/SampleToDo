@@ -73,10 +73,8 @@ export default class Board extends React.Component {
   }
 
   handleNewCardSubmit(summary) {
-    // event.preventDefault();
 
     if (summary === ''){
-      // this.setState({newItemEmpty: 'You forgot to add a summary! 😱'});
       return;
     }
 
@@ -144,7 +142,6 @@ export default class Board extends React.Component {
             className="butn"
             onClick={this.openPopup}
         >NEW</button>
-        {/*<a href="#modal-new" data-modal-open>NEW Task</a>*/}
           <section className="columns">
             <DragDropContext onDragEnd={this.onDragEnd}>
               <CardColumn
