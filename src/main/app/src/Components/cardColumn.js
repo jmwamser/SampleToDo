@@ -21,6 +21,7 @@ export default function CardColumn(props) {
                         <Draggable
                             index={index}
                             draggableId={item.cid}
+                            key={item.cid}
                         >
                             {(provided)=>(
                                 <div
