@@ -103,8 +103,7 @@ export default class Board extends React.Component {
       return;
     }
     if(
-        destination.droppableId === source.droppableId &&
-        destination.index === source.index
+        destination.droppableId === source.droppableId
     ){
       return
     }
